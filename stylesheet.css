@@ -80,14 +80,15 @@ h2 {
     font-size: 50px;
 }
 
-.title {
-    position: absolute;
+.title-main {
+    position:sticky;
     text-align: center;
     width: 100%;
     left: 0;
     top: 40%;
     color: #000;
     font-size: 60px;
+    margin-bottom: 200px;
 }
 
 p {
@@ -126,7 +127,13 @@ p {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+}
+
+.details-card:hover{
+    transform:translate(-50%,-50%) scale(1.05) ;
+    transition-duration: 0.35s;
+    box-shadow: 0px 0px 50px 20px rgba(162, 160, 160, 0.2);
 }
 
 .details-text {
