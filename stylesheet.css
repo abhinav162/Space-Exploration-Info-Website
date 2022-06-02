@@ -8,6 +8,7 @@ html {
     margin: 0;
     font: 400 15px/1.8 "Lato", sans-serif;
     color: #777;
+    overflow-x: hidden;
 }
 
 a {
@@ -165,7 +166,7 @@ p {
 
 .card:hover {
     transform: scale(1.05);
-    transition-duration: 0.4s;
+    transition-duration: 0.35s;
     box-shadow: 0px 0px 50px 20px rgb(255, 115, 115);
     animation-name: shadow-animate;
     animation: shadow-animate 4s linear infinite;
