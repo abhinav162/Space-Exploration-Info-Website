@@ -1,0 +1,231 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+a {
+    color: #777;
+}
+
+.bgm1,
+.bgm2,
+.bgm3,
+.bgm4,
+.bgm5,
+.bgm6 {
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.bgm1 {
+    background-image: url("Media/testbg2.png");
+    min-height: 100%;
+    opacity: 0.75;
+}
+
+.bgm2 {
+    background-image: url("Media/testbg1.png");
+    min-height: 95%;
+    opacity: 0.9;
+}
+
+.bgm3 {
+    background-image: url("Media/sunbg.png");
+    min-height: 95%;
+    opacity: 0.85;
+}
+
+.bgm4 {
+    background-image: url("Media/venusbg.jpg");
+    min-height: 100%;
+    opacity: 0.90;
+}
+
+.bgm5 {
+    background-image: url("Media/moon2.jpg");
+    min-height: 100%;
+    opacity: 0.90;
+}
+
+.bgm6 {
+    background-image: url("Media/mars1.jpg");
+    min-height: 100%;
+    opacity: 0.95;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+    font-size: 25px;
+}
+
+h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #ddd;
+    font-size: 50px;
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 40%;
+    color: #000;
+    font-size: 60px;
+}
+
+p {
+    padding-top: 15px;
+    text-align: center;
+    width: 50%;
+    transform: translate(50%);
+    font-size: 20px;
+}
+
+.heading {
+    text-align: center;
+    transform: translateY(-45%);
+}
+
+.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.border2 {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.details-card {
+    background-color: rgba(87, 84, 84, 0.6);
+    border-radius: 16px;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.details-text {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    color: #ddd;
+    font-size: 20px;
+    padding: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    margin: 30px -400px;
+    padding: 20px;
+    border: 10px;
+    position: relative;
+    border-radius: 20px;
+    background-color: rgb(229, 238, 238);
+    width: 250px;
+    height: auto;
+    box-shadow: 0px 0px 30px 10px rgb(223, 115, 219);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 50px 20px rgb(255, 115, 115);
+    animation-name: shadow-animate;
+    animation: shadow-animate 4s linear infinite;
+    z-index: 1;
+}
+
+@keyframes shadow-animate {
+    0% {
+        box-shadow: 0px 0px 50px 20px rgb(149, 76, 238);
+    }
+
+    25% {
+        box-shadow: 0px 0px 50px 20px rgb(84, 127, 247);
+    }
+
+    25% {
+        box-shadow: 0px 0px 50px 20px rgb(255, 115, 115);
+    }
+
+    75% {
+        box-shadow: 0px 0px 50px 20px rgb(223, 126, 255);
+    }
+
+    100% {
+        box-shadow: 0px 0px 50px 20px rgb(149, 76, 238);
+    }
+}
+
+.card h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 4px;
+    color: rgb(68, 65, 65);
+    margin-top: -20px;
+}
+
+.card p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    left: 0;
+    transform: translate(0);
+}
+
+.card hr {
+    margin-top: 15px;
+    border-top: 5px solid rgb(137, 127, 127);
+    border-radius: 20px
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .bgm1,
+    .bgm2,
+    .bgm3,
+    .bgm4 {
+        background-attachment: scroll;
+    }
+}
