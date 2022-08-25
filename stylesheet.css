@@ -132,7 +132,7 @@ p {
 
 .details-card:hover{
     transform:translate(-50%,-50%) scale(1.05) ;
-    transition-duration: 0.35s;
+    transition-duration: 0.2s;
     box-shadow: 0px 0px 50px 20px rgba(162, 160, 160, 0.2);
 }
 
