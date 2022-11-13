@@ -1,4 +1,4 @@
-# Space-Exploration-Info-Websit
+# Space-Exploration-Info-Website
 
 This is a website that I made to help me learn more about space exploration. It is a work in progress and I will be adding more information as I learn more about space exploration.
 
